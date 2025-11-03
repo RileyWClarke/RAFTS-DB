@@ -5,9 +5,7 @@ astrodb-template-db
 
 
 
-A template schema for astronomical databases. 
-
-Usage instructions are included in the companion `astrodb-utils` package: [Getting started with a new database](https://astrodb-utils.readthedocs.io/en/latest/pages/make_new_db/getting_started_new_database.html)
+A Database of Stellar Flares detected in the Rubin LSST -- Built using the astroDB template.
 
 Entity relationship diagram of the template schema
 
