@@ -589,6 +589,18 @@ tables:
       description: Photometric magnitude  
       fits:tunit: mag
       ivoa:ucd: phot.mag
+    - name: ra
+      "@id": "#Photometry.ra"
+      datatype: double
+      description: Right ascension for this epochal measurement (decimal degrees)
+      fits:tunit: deg
+      ivoa:ucd: pos.eq.ra
+    - name: dec
+      "@id": "#Photometry.dec"
+      datatype: double
+      description: Declination for this epochal measurement (decimal degrees)
+      fits:tunit: deg
+      ivoa:ucd: pos.eq.dec
     - name: magnitude_error
       "@id": "#Photometry.magnitude_error"
       datatype: double
