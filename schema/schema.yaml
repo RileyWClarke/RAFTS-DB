@@ -617,7 +617,7 @@ tables:
       "@id": "#Photometry.airmass"
       datatype: double
       description: Airmass at the time of the exposure (dimensionless)
-      fits:tunit: None
+      fits:tunit: dimensionless_unscaled
       ivoa:ucd: obs.airMass
     - name: epoch
       "@id": "#Photometry.epoch"
