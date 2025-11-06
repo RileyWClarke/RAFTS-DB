@@ -589,30 +589,36 @@ tables:
       description: Photometric magnitude  
       fits:tunit: mag
       ivoa:ucd: phot.mag
-    - name: ra
-      "@id": "#Photometry.ra"
-      datatype: double
-      description: Right ascension for this epochal measurement (decimal degrees)
-      fits:tunit: deg
-      ivoa:ucd: pos.eq.ra
-    - name: dec
-      "@id": "#Photometry.dec"
-      datatype: double
-      description: Declination for this epochal measurement (decimal degrees)
-      fits:tunit: deg
-      ivoa:ucd: pos.eq.dec
     - name: magnitude_error
       "@id": "#Photometry.magnitude_error"
       datatype: double
       description: Uncertainty of the magnitude
       fits:tunit: mag
       ivoa:ucd: stat.error;phot.mag
+    - name: ra
+      "@id": "#Photometry.ra"
+      datatype: double
+      description: Right ascension for this epoch (decimal degrees)
+      fits:tunit: deg
+      ivoa:ucd: pos.eq.ra
+    - name: dec
+      "@id": "#Photometry.dec"
+      datatype: double
+      description: Declination for this epoch (decimal degrees)
+      fits:tunit: deg
+      ivoa:ucd: pos.eq.dec
     - name: telescope
       "@id": "#Photometry.telescope"
       datatype: string
       length: 30
       description: Telescope, mission, or survey name; links to Telescopes table
       ivoa:ucd: instr.tel;instr.obsty
+    - name: airmass
+      "@id": "#Photometry.airmass"
+      datatype: double
+      description: Airmass at the time of the exposure (dimensionless)
+      fits:tunit: 1
+      ivoa:ucd: obs.atmos.airMass
     - name: epoch
       "@id": "#Photometry.epoch"
       datatype: double
